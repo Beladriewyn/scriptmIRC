@@ -1,0 +1,91 @@
+                                                            .__        __   
+   ____________   ____   ____             ______ ___________|__|______/  |_ 
+   \___   /  _ \ /    \_/ __ \   ______  /  ___// ___\_  __ \  \____ \   __\
+    /    (  <_> )   |  \  ___/  /_____/  \___ \\  \___|  | \/  |  |_> >  |  
+   /_____ \____/|___|  /\___  >         /____  >\___  >__|  |__|   __/|__|  
+         \/          \/     \/               \/     \/         |__|         
+
+    Gestionnaire Youtube Version 4.3 - kikuchi
+__________________________________________________________________________
+
+Installation : 
+              * Dézippez le fichier youtube.zip
+              * Placez le dossier youtube à la racine de votre mirc
+                (si vous n'êtes pas sûr tapez //run . celà ouvrira le bon dossier)
+              * Allez devant mirc et tapez //load -rs youtube/youtube.mrc
+              * Tapez /yc pour ouvrir le dialog de configuration 
+__________________________________________________________________________
+Instructions: 
+              * Commencer par ouvrir le dialog de configuration en tapant /yc ou
+                clique droit sur un salon, une fenêtre status, un privé ou le menubar
+                sélectionnez tout d'abord votre langue et cochez les options qui vous intéresse
+                ensuite profitez et n'hésitez pas à donner votre avis
+              * Pour effectuer des recherches vous avez la commande /ytsearch <mots...>
+                ou dans l'onglet du dialog de configuration ou directement via un des 
+                dialogs vidéos ouverts
+__________________________________________________________________________
+
+Nécessite : 
+              * mIRC 7.27+
+              * dcx 2.0.1114 (inclus)
+__________________________________________________________________________
+
+Remerciements: 
+
+              Merci aux bêta testeurs de me supporter
+              Merci à Saga & Wims pour l'aide quand mon cerveau ne veut plus rien savoir
+              Merci à Ook pour le maintien et la continuité de dcx.dll
+              Merci à Merlin du salon #mirc (Rizon) pour la traduction en allemand
+              Son site http://www.mish-script.de
+              Merci à Extreminador du salon #msl (SwiftIRC) et Ruan du salon #Script-Help (GeekShed)
+              pour la traduction en portugais
+              Merci à vous d'utiliser ma remote :)
+__________________________________________________________________________
+
+Version 4.3 : 23/07/2013
+
+              * Choix de la fenêtre qu'on ouvre dans le dialog /yc avec la commande /yc 1,2 ou 3
+              * Si l'url contient un temps de démarrage la vidéo prendra le temps en compte.
+              * Rajout dans la titlebar du dialog /yc du titre sélectionné pour pouvoir le voir en entier.
+              * Changement de la regex pour matcher des types de liens en plus
+              * Suppression du "- Youtube" dans les titres des dialogs
+              * Rajout du système de recherche via l'alias /yc exemple : /yc 3 mirc pacman
+
+Version 3.7 : 22/05/2013
+
+              * Modification des flags pour l'activation des boutons de redimmensionnement des vidéos.
+              * Changement de la regex de détection des liens youtube pour en capter 5 en plus.
+              * Modification du code pour que le changement de taille s'applique directement à la vidéo en cours de lecture.
+              * Suppression de la barre de recherche dans les dialogs vidéos
+              * Rajout de la traduction en portugais d'Extreminador & Ruan
+              * Rajout de l'avertisseur si la vidéo ne peut pas être vue sur mIRC
+              * Ouverture de la vidéo dans le navigateur si l'url contient un temps ou qu'elle ne peut etre visualiser dans la remote.
+
+Version 3 : 16/04/2013
+
+              * Rajout de la traduction en allemand de Merlin
+              * Rajout du titre de la vidéo qu'on visonne
+              * Rajout de la possibilitée de minimiser/maximiser le dialog de configuration
+              * Utilisation de l'api youtube mobile pour la récupération des titres
+
+Version 2.6 : 18/03/2013
+
+              * Changement de dcx.dll pour la version 2.0.1114 Release Build
+              * Changement du code pour refaire fonctionner les recherches
+              * Mise en place de l'effet fantôme quand on déplace une fenêtre vidéo
+              * Mise en place d'un alias pour réinitialiser la configuration
+              * Changement du code source de youtube pour l'affichage des titres
+              * Visualisation de plusieurs titres sur une seule ligne
+
+Versions 2 :
+
+              * Mises en place de trois fonctions en plus : la fonction presse-papier, focus et infos
+              * Utilisation de la nouvelle option de $hfind ce qui oblige à l'utilisation de mIRC 7.27+
+              * Quelques modifications minimes dans l'ancien code pour retirer mes essais de compatibilités
+                 avec mIRC 6.x
+              * Rajout de la page Recherche dans le dialog de configuration avec visualisation des images
+              * Utilisation d'un cadre pour des informations via mon site pour les majs par exemple
+              * Rajout de l'alias /ytsearch <recherches> pour faire des recherches dans une window
+              * Rajout d'un combo dans les dialogs vidéos permettant d'effectuer des recherches
+              * Changement de dcx.dll pour la version 2.0.1094 Development Build14
+              * Affichage du titre en changement dans les topics et à l'entrée d'un salon
